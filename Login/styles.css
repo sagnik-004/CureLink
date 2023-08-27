@@ -14,6 +14,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+.login{
+  text-align: center;
+}
 .wrapper {
   width: 420px;
   background: transparent;
