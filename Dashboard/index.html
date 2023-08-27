@@ -12,13 +12,19 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
         rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quattrocento&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav class="navbar">
+        <nav class="navbar" >
           <ul class="navbar-nav">
             <li class="logo">
               <a href="#" class="nav-link">
-                <span class="link-text logo-text">CureLink</span>
+                <a href="/CureLink/Landing"><span class="link-text logo-text compan" style="text-align: center;">CureLink</span></a>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -70,7 +76,7 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="link-text">A</span>
+                <span class="link-text">Profile</span>
               </a>
             </li>
       
@@ -99,7 +105,7 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="link-text">B</span>
+                <span class="link-text">Medication</span>
               </a>
             </li>
       
@@ -128,12 +134,12 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="link-text">C</span>
+                <span class="link-text">Contact Us</span>
               </a>
             </li>
       
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <href href="#" class="nav-link">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -157,7 +163,7 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="link-text">D</span>
+                <a href="/CureLink/Login" class="link-text logout"><span>Logout</span></a>
               </a>
             </li>
       
@@ -238,7 +244,7 @@
                     ></path>
                   </g>
                 </svg>
-                <span class="link-text">User</span>
+                <span class="link-text">Easter egg</span>
               </a>
             </li>
           </ul>
@@ -246,14 +252,12 @@
     
     
     <header class="header">
-      <h1>DASHBOARD</h1>
+      <h1 class="dashboard-header">Welcome to your CureLink Dashboard</h1>
     </header>
     <section class="side-bar">
       <div class="static-data">
-        <h1>Hi, Username Check your health</h1>
+        <h1>Hi, <span class="username">David</span> check your health status</h1>
         <h1>Age = 66</h1>
-        <h1>Height = 152cm</h1>
-        <h1>Weight = 65kg</h1>
         <h1>Blood Group = B+</h1>
       </div>
     </section>
@@ -263,41 +267,54 @@
           <h1 class="steps">Steps</h1>
           <h1 class="heart-rate">Heart Rate</h1>
         </div>
-        <img src="/CureLink/Assets/person-running-solid.svg" alt="running-img" class="running">
-        <img src="/CureLink/Assets/heart-pulse-solid.svg" alt="heartbeat-img" class="heartbeat">
+        <div class="card-1-images">
+          <img src="/CureLink/Assets/person-running-solid.svg" alt="running-img" class="running"><br><br>
+          <img src="/CureLink/Assets/heart-pulse-solid.svg" alt="heartbeat-img" class="heartbeat"><br><br>
+        </div>
         <div class="card-1-data">
             <div class="steps-data">
-              <h3>Target steps: 7000</h3>
-              <h3>Steps Completed: 5620</h3>
+              <h3>Target steps:<span class="dynamic"> 7000</h3><br>
+              <h3>Steps Completed:<span class="dynamic"> 5620</h3>
             </div>
             <div class="heart-data">
-              <h3>Normal Rate: 82</h3>
-              <h3>Your Rate: 85</h3>
-              <h3>Status: Normal</h3>
+              <h3>Normal:<span class="dynamic">82</h3><br>
+              <h3>Your: <span class="dynamic">85</h3><br>
+              <h3>Status: <span class="dynamic">Normal</h3>
             </div>
         </div>
       </div>
       <div class="card">
         <h1 class="sleep">Sleep Hours</h1>
-        <img src="/CureLink/Assets/bed-solid.svg" alt="" class="sleep-logo">
-        <h3>Normal Sleep Requirement: 7.8 hours/day</h3>
-        <h3>Your Average Sleep Duration for last 7 days: 8.2 hours/day</h3>
+        <img src="/CureLink/Assets/bed-solid.svg" alt="" class="sleep-logo"><br><br>
+        <h3>Normal Sleep Requirement:<span class="dynamic"> 7.8 hours/day</h3><br>
+        <h3>Your Average Sleep Duration for last 7 days:<span class="dynamic">8.2 hours/day</h3>
       </div>
       <div class="card">
         <h1 class="upcoming-apps">Upcoming Appointments</h1>
         <img src="/CureLink/Assets/clock-regular.svg" alt="" class="app-img">
-        <h3 class="appointment">No appointments pending in coming week :)</h3>
+        <h3 class="appointment">No appointments scheduled today.</h3>
+        <br>
+        <h3>Don't forget to keep a check on your calender.</h3>
+        <br>
+        <h1 class="notifications">Critical Notifications</h1>
+        <h3 class="notif">You're Healthy.</h3>
       </div>
       <div class="card">
         <h1 class="calender">Calender</h1>
-        <img src="/CureLink/Assets/calendar-days-solid.svg" alt="" class="calender-logo">
+        <a href="/CureLink/Calender"><img src="/CureLink/Assets/Calender img.png" alt="" class="calender-img"></a>
       </div>
       <div class="card">
         <h1 class="bg">Blood Sugar Level</h1>
         <img src="/CureLink/Assets/diabetes.png" alt="">
+        <img src="/CureLink/Assets/blood sugar level.png" alt="" class="blood-sugar-graph">
       </div>
       <div class="card">
-        <h1>Body Mass Index</h1>
+        <div class="htwt">
+          <h1>Height: 165cm</h1>
+          <h1>Weight: 65kg</h1>
+        </div>
+        <h1 class="bmi">Body Mass Index: 23.9</h1>
+        <img src="/CureLink/Assets/weight-scale-solid.svg" alt="" class="bmi-img">
       </div>
   </main>
 </body>
